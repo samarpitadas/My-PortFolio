@@ -229,7 +229,7 @@ body{
   height: 2px;
   background-color: #00abf0;
 }
-.about h1, .expo h1, .contact h1{
+.about h1, .expo h1, .contact h1, .skills h1{
   margin: 20px 40px 10px;
   font-size: 35px;
   color: #00abf0;
