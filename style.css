@@ -1,0 +1,455 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body{
+  background-color: #081b29;
+  color: #ededed;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: rgb(44, 46, 52);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+.navbar a{
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 30px;
+  transition: .3s;
+}
+.navbar a:hover, .navbar a.active{
+  color: #00abf0;
+}
+/* .home{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+}
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+.home-content p{
+  margin: 20px 0px 40px;
+  font-size: 18px;
+}
+.home-content .btn-box{
+  width: 345px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-box a{
+  background: #00abf0;
+  text-decoration: none;
+  height: 100%;
+  width: 150px;
+  border: 2px solid #00abf0;
+  border-radius: 15px;
+  display: inline-flex;
+  font-size: 19px;
+  color: #081b29;
+  font-weight: 600;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.btn-box a:hover{
+  background: transparent;
+  color: #ededed;
+}
+.btn-box a:nth-child(2){
+  background: transparent;
+  color: #ededed;
+  transition: 0.5s;
+}
+.btn-box a:nth-child(2):hover{
+  background-color: #00abf0;
+  color: #081b29;
+}
+.home-sec{
+  display: flex;
+} */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+
+.home-content p {
+  margin: 20px 0 40px;
+  font-size: 18px;
+}
+
+.home-content .btn-box {
+  width: 345px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-box a {
+  background: #00abf0;
+  text-decoration: none;
+  height: 100%;
+  width: 150px;
+  border: 2px solid #00abf0;
+  border-radius: 15px;
+  display: inline-flex;
+  font-size: 19px;
+  color: #081b29;
+  font-weight: 600;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.btn-box a:hover {
+  background: transparent;
+  color: #ededed;
+}
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #ededed;
+  transition: 0.5s;
+}
+
+.btn-box a:nth-child(2):hover {
+  background-color: #00abf0;
+  color: #081b29;
+}
+
+.home-sec {
+  display: flex;
+}
+
+/* Responsive styles for screen sizes between 300px and 590px */
+@media (max-width: 590px) {
+  .home {
+    padding: 0 5%; /* Reduce padding for smaller screens */
+  }
+
+  .home-content h1 {
+    font-size: 40px; /* Adjust font size */
+  }
+
+  .home-content h3 {
+    font-size: 24px; /* Adjust font size */
+  }
+
+  .home-content p {
+    font-size: 16px; /* Adjust font size */
+    margin: 20px 0 20px; /* Adjust margins */
+  }
+
+  .home-content .btn-box {
+    width: 100%; /* Full width for button box */
+    height: auto; /* Adjust height to fit content */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+  }
+
+  .btn-box a {
+    width: 100%; /* Full width for buttons */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px; /* Add padding */
+  }
+}
+
+/* Additional responsive styles for very small screens (300px and below) */
+@media (max-width: 300px) {
+  .home {
+    padding: 0 2%; /* Further reduce padding */
+  }
+
+  .home-content h1 {
+    font-size: 28px; /* Further reduce font size */
+  }
+
+  .home-content h3 {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .home-content p {
+    font-size: 14px; /* Further reduce font size */
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .home-content .btn-box a {
+    font-size: 14px; /* Further reduce font size */
+    padding: 8px; /* Adjust padding */
+  }
+}
+
+.separation{
+  height: 2px;
+  background-color: #00abf0;
+}
+.about h1, .expo h1, .contact h1{
+  margin: 20px 40px 10px;
+  font-size: 35px;
+  color: #00abf0;
+}
+.content{
+  font-size: 18px;
+  margin: 20px 40px;
+  width: 40%;
+}
+.image{
+  background-image: url('image1.jpg');
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  margin: 0px;
+  border-radius: 50%;
+}
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 20px 40px;
+}
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.item{
+  width: 23%;
+  border: 2px solid #00abf0;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item:hover {
+  box-shadow: 0 0 10px 3px #00abf0;
+  width: 24%;
+}
+.item-icon{
+  font-size: 100px;
+}
+.item-name{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.info{
+  display: flex;
+  margin: 30px;
+}
+.heading{
+  margin: 0px 20px;
+  width: 50px;
+}
+.icon{
+  font-size: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 2px solid #ededed;
+  border-radius: 50%;
+  color: #f0e4e4;
+}
+.experiences{
+  margin:20px;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.experience{
+  margin: 20px;
+}
+.RESUME{
+  margin: 20px;
+  text-decoration: none;
+  color: #00abf0;
+}
+.RESUME:hover{
+  color: #ededed;
+}
+@media (max-width: 590px) {
+  .header {
+      padding: 15px 5px; /* Adjust padding */
+      flex-direction: column; /* Stack items vertically */
+      text-align: center; /* Center text in header */
+  }
+
+  .navbar {
+      flex-direction: column; /* Stack navigation links vertically */
+      gap: 10px; /* Adjust space between links */
+  }
+
+  .navbar a {
+      font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* Additional styles for very small screens */
+@media (max-width: 400px) {
+  .header {
+      padding: 10px 5px; /* Further adjust padding */
+  }
+
+  .navbar {
+      gap: 5px; /* Adjust space between links */
+  }
+
+  .navbar a {
+      font-size: 12px; /* Further adjust font size */
+  }
+}
+@media (max-width: 590px) {
+  
+  .item-icon{
+    font-size: 40px;
+  }
+  .item-name{
+    font-size: 18px;
+  }
+}
+
+/* Additional responsive styles for very small screens (300px and below) */
+
+@media (max-width: 590px) {
+  .about h1, .expo h1, .contact h1 {
+    margin: 20px 20px 10px;
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .content {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin: 20px 20px; /* Adjust margins */
+    width: 100%; /* Make content full width */
+  }
+
+  .image {
+    height: 150px; /* Reduce image size */
+    width: 150px; /* Reduce image size */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+  }
+}
+
+/* Additional responsive styles for very small screens (300px and below) */
+@media (max-width: 300px) {
+  .about h1, .expo h1, .contact h1 {
+    font-size: 22px; /* Further reduce font size */
+    margin: 15px 10px 10px; /* Adjust margins */
+  }
+
+  .content {
+    font-size: 14px; /* Further reduce font size */
+    margin: 10px 10px; /* Adjust margins */
+    width: 100%; /* Ensure content fits within the viewport */
+  }
+
+  .image {
+    height: 120px; /* Further reduce image size */
+    width: 120px; /* Further reduce image size */
+  }
+}
+@media (max-width: 590px) {
+  .contact {
+    padding: 10px;
+  }
+
+  .contact h1 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .info {
+    margin-bottom: 10px;
+  }
+
+  .heading {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .info div {
+    font-size: 11px; /* Adjust font size for smaller screens */
+  }
+
+  .icon {
+    font-size: 15px; /* Adjust icon size */
+    
+  }
+}
+
+/* Additional responsive styles for very small screens (300px and below) */
+@media (max-width: 300px) {
+  .contact {
+    padding: 5px;
+  }
+
+  .contact h1 {
+    font-size: 22px; /* Further reduce font size */
+    margin-bottom: 10px;
+  }
+
+  .info {
+    margin-bottom: 8px;
+  }
+
+  .heading {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .info div{
+    font-size: 10px; /* Further reduce font size */
+  }
+
+  .icon {
+    font-size: 18px; /* Further reduce icon size */
+    margin: 5px;
+  }
+}
