@@ -5,7 +5,7 @@
   box-sizing: 0;
 }
 body{
-  background-color: #081b29;
+  background-color: #0b0a3e;
   color: #ededed;
 }
 .header{
@@ -38,65 +38,6 @@ body{
 .navbar a:hover, .navbar a.active{
   color: #00abf0;
 }
-/* .home{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 10%;
-}
-.home-content h1{
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-.home-content h3{
-  font-size: 32px;
-  font-weight: 700;
-  color: #00abf0;
-}
-.home-content p{
-  margin: 20px 0px 40px;
-  font-size: 18px;
-}
-.home-content .btn-box{
-  width: 345px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-.btn-box a{
-  background: #00abf0;
-  text-decoration: none;
-  height: 100%;
-  width: 150px;
-  border: 2px solid #00abf0;
-  border-radius: 15px;
-  display: inline-flex;
-  font-size: 19px;
-  color: #081b29;
-  font-weight: 600;
-  letter-spacing: 1px;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-.btn-box a:hover{
-  background: transparent;
-  color: #ededed;
-}
-.btn-box a:nth-child(2){
-  background: transparent;
-  color: #ededed;
-  transition: 0.5s;
-}
-.btn-box a:nth-child(2):hover{
-  background-color: #00abf0;
-  color: #081b29;
-}
-.home-sec{
-  display: flex;
-} */
 .home {
   height: 100vh;
   display: flex;
@@ -128,6 +69,23 @@ body{
   height: 50px;
   display: flex;
   justify-content: space-between;
+}
+.navbar::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(44, 46, 52);
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+@keyframes showRight {
+  100%{
+    width: 0;
+  }
+  
 }
 
 .btn-box a {
@@ -161,10 +119,6 @@ body{
 .btn-box a:nth-child(2):hover {
   background-color: #00abf0;
   color: #081b29;
-}
-
-.home-sec {
-  display: flex;
 }
 
 /* Responsive styles for screen sizes between 300px and 590px */
@@ -224,16 +178,20 @@ body{
     padding: 8px; /* Adjust padding */
   }
 }
-
+.home{
+  background-image: url("bg.avif");
+  background-size:cover;
+}
 .separation{
   height: 2px;
   background-color: #00abf0;
 }
-.about h1, .expo h1, .contact h1, .skills h1{
+.about h1, .expo h1, .contact h1, .skills h1 {
   margin: 20px 40px 10px;
   font-size: 35px;
   color: #00abf0;
 }
+
 .content{
   font-size: 18px;
   margin: 20px 40px;
@@ -246,6 +204,12 @@ body{
   background-size: cover;
   margin: 0px;
   border-radius: 50%;
+  transition: 0.5s
+}
+.image:hover{
+  height: 210px;
+  width: 210px;
+  box-shadow: 0 0 10px 3px #ededed;
 }
 .about-content{
   display: flex;
